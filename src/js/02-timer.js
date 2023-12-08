@@ -67,6 +67,7 @@ function onStartBtnClick() {
     secondsToEnd.textContent = addLeadingZero(seconds);
 
     if (timeToEnd < 1000) {
+      Notiflix.Notify.success('Time is over!');
       clearInterval(timerId);
       date.disabled = false;
     }

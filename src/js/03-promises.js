@@ -40,4 +40,5 @@ function createPromiseSubmit(evt) {
       });
     delayValue += stepValue;
   }
+  evt.currentTarget.reset();
 }
